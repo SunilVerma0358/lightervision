@@ -71,7 +71,7 @@
     background-image: url(../images/hero-bg.webp);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: start;
 }
 
 
@@ -158,11 +158,11 @@
 }
 
 .mt_16 {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .mt_40 {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .gap-4 {
@@ -206,7 +206,7 @@
         background-position: 0% 0%;
     }
     50% {
-        background-position: 0% 50%;
+        background-position: 100% 50%;
     }
     100% {
         background-position: 0% 0%;
@@ -273,6 +273,9 @@
     .block {
         display: block;
     }
+    .bg-hero {
+        background-size: 100% 100%;
+    }
 }
 
 @media (min-width:768px) {
@@ -286,6 +289,12 @@
     }
     .max_w_logo {
         max-width: 250px;
+    }
+    .mt_16 {
+        margin-top: 16px;
+    }
+    .mt_40 {
+        margin-top: 40px;
     }
 }
 
