@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /* font-size */
+    --fs-xl: 16px;
+    --fs-7xxl: 32px;
+    /* line-height */
+    --lh-sm: 121%;
+    --lh-normal: 150%;
+    /* font-weight  */
+    --fw-normal: 400;
+    --fw-semibold: 600;
+    --fw-extrabold: 800;
+    /* color */
+    --white: white;
+    --blue: #0F63DD;
+}
+
+.ff_Montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ff_Open {
+    font-family: "Open Sans", sans-serif;
+}
+
+.fw_normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw_extrabold {
+    font-weight: var(--fw-extrabold);
+}
+
+.fs_7xxl {
+    font-size: var(--fs-7xxl);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.lh_normal {
+    line-height: var(--lh-normal);
+}
+
+.lh_sm {
+    line-height: var(--lh-sm);
+}
+
+.white {
+    color: var(--white)
+}
+
+.blue {
+    color: var(--blue)
+}
+
+.bg-hero {
+    background-image: url(../images/hero-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* common class */
+
+.container {
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.mx_auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.opacity_70 {
+    opacity: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.vh_header {
+    min-height: 100vh;
+}
+
+.linear_gradient_pink {
+    background: linear-gradient(260.94deg, #F07CBD 9.82%, #8753A4 104.93%);
+    border-radius: 35px;
+    width: 34px;
+    height: 34px;
+    transition: all linear 300ms;
+}
+
+.linear_gradient_pink:hover {
+    transform: translateY(-5px);
+}
+
+.max_w_544 {
+    max-width: 544px;
+}
+
+.max_w_logo {
+    max-width: 200px;
+}
+
+.w_full {
+    width: 100%;
+}
+
+.z_1 {
+    z-index: 1;
+}
+
+
+/* padding */
+
+.pt_4 {
+    padding-top: 4px;
+}
+
+.pt_16 {
+    padding-top: 16px;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
+
+.mt_16 {
+    margin-top: 16px;
+}
+
+.gap-4 {
+    gap: 16px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bgText {
+    background: url("../images/HeadingImg.webp");
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-position: start;
+    background-clip: text;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    animation: moveText 10s linear infinite;
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--white);
+    position: absolute;
+    bottom: 30px;
+    right: 28px;
+    box-shadow: 0px 4px 16.6px 0px #8058B3;
+}
+
+.widthAndHeight {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes moveText {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+/* postion */
+
+.overflow_hidden {
+    overflow: hidden !important;
+}
+
+.speakerPosition {
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    max-width: 180px;
+    max-height: 210px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.shanahiPosition {
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    max-width: 180px;
+    max-height: 210px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@media (min-width:576px) {
+     :root {
+        /* font-size */
+        --fs-xl: 16px;
+        --fs-7xxl: 48px;
+    }
+    .vh_header {
+        min-height: 100vh;
+    }
+    .max_w_logo {
+        max-width: 300px;
+    }
+    .card {
+        width: 70px;
+        height: 70px;
+        bottom: 36px;
+        right: 39px;
+    }
+    .widthAndHeight {
+        width: 50px;
+        height: 50px;
+    }
+    .speakerPosition {
+        max-width: 248px;
+        max-height: 300px;
+    }
+    .shanahiPosition {
+        max-width: 248px;
+        max-height: 300px;
+    }
+    .block {
+        display: block;
+    }
+}
+
+@media (min-width:768px) {
+     :root {
+        /* font-size */
+        --fs-xl: 18px;
+        --fs-7xxl: 60px;
+    }
+    .vh_header {
+        min-height: 810px;
+    }
+    .max_w_logo {
+        max-width: 320px;
+    }
+}
+
+@media (min-width:992px) {
+    .vh_header {
+        min-height: 100vh;
+    }
+     :root {
+        /* font-size */
+        --fs-xl: 20px;
+        --fs-7xxl: 72px;
+    }
+    .max_w_logo {
+        max-width: 368px;
+    }
+}
+
+@media (min-width:1536px) {
+    .vh_header {
+        min-height: 100vh;
+    }
+}
